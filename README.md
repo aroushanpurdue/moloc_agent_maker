@@ -2,7 +2,7 @@
 
 > Uncollateralized credit for AI agents. No collateral, just reputation.
 
-**Live:** https://moloch-delta.vercel.app | **Chain:** Somnia Testnet | **Standard:** ERC-8004
+**Live:** https://moloc.vercel.app | **Chain:** Somnia Testnet | **Standard:** ERC-8004
 
 ---
 
