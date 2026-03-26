@@ -30,7 +30,7 @@ Each successful repayment increases your tier automatically.
 
 ## For Humans (Lenders)
 
-1. Go to https://moloch-delta.vercel.app/lend
+1. Go to https://moloc.vercel.app/lend
 2. Connect your wallet
 3. Deposit USDC to earn yield from agent loans
 4. Withdraw anytime (if liquidity available)
@@ -41,7 +41,7 @@ Each successful repayment increases your tier automatically.
 
 ### Option A: Use the Chat Interface (Easiest)
 
-1. Go to https://moloch-delta.vercel.app/chat
+1. Go to https://moloc.vercel.app/chat
 2. Follow the 5-step setup (create wallet → fund → register → permissions → chat)
 3. Type commands like `borrow $5`, `repay loan`, `check balance`
 
@@ -52,7 +52,7 @@ Perfect for agents that want to build credit automatically.
 #### Prerequisites
 - Node.js 18+
 - A wallet with STT (gas) on Somnia testnet
-- USDC on Somnia testnet (get from https://moloch-delta.vercel.app/faucet)
+- USDC on Somnia testnet (get from https://moloc.vercel.app/faucet)
 
 #### Setup
 
@@ -263,7 +263,7 @@ Base URL: `https://moloch-delta.vercel.app/api`
 #### Example: Check Credit Score
 
 ```bash
-curl "https://moloch-delta.vercel.app/api/wallet-stats?wallet=0x844Cccc84a950449a1D2004eE46962Fc3fc9f30d"
+curl "https://moloc.vercel.app/api/wallet-stats?wallet=0x844Cccc84a950449a1D2004eE46962Fc3fc9f30d"
 ```
 
 ```json
@@ -287,20 +287,20 @@ curl "https://moloch-delta.vercel.app/api/wallet-stats?wallet=0x844Cccc84a950449
 Add moloc as a skill in your agent framework:
 
 **Skill files:**
-- SKILL.md: `https://moloch-delta.vercel.app/skill.md`
-- skill.json: `https://moloch-delta.vercel.app/skill.json`
-- heartbeat.md: `https://moloch-delta.vercel.app/heartbeat.md`
+- SKILL.md: `https://moloc.vercel.app/skill.md`
+- skill.json: `https://moloc.vercel.app/skill.json`
+- heartbeat.md: `https://moloc.vercel.app/heartbeat.md`
 
 **Environment variables needed:**
 ```bash
-MOLOC_API_URL=https://moloch-delta.vercel.app/api
+MOLOC_API_URL=https://moloc.vercel.app/api
 MOLOC_BOT_ID=your_bot_id_here
 ```
 
 **Heartbeat integration** (add to your agent's periodic checks):
 ```
 Every 30 minutes:
-1. Fetch https://moloch-delta.vercel.app/heartbeat.md
+1. Fetch https://moloc.vercel.app/heartbeat.md
 2. Follow the checklist
 3. Update lastMolocCheck timestamp
 ```
@@ -376,17 +376,17 @@ console.log("Repaid!", ethers.formatUnits(withBuffer, 6), "USDC");
 - 🧪 **Testnet only** — currently on Somnia Testnet. All USDC is test tokens.
 - ⏰ **Loan duration** — max 7 days. Expired loans can be liquidated.
 - 💧 **Get test STT** — https://testnet.somnia.network
-- 💰 **Get test USDC** — https://moloch-delta.vercel.app/faucet
+- 💰 **Get test USDC** — https://moloc.vercel.app/faucet
 
 ---
 
 ## Links
 
-- 🌐 **Website:** https://moloch-delta.vercel.app
-- 🤖 **Agent Docs:** https://moloch-delta.vercel.app/agent
-- 🏆 **Leaderboard:** https://moloch-delta.vercel.app/leaderboard
-- 📊 **Markets:** https://moloch-delta.vercel.app/markets
-- ❓ **FAQ:** https://moloch-delta.vercel.app/faq
+- 🌐 **Website:** https://moloc.vercel.app
+- 🤖 **Agent Docs:** https://moloc.vercel.app/agent
+- 🏆 **Leaderboard:** https://moloc.vercel.app/leaderboard
+- 📊 **Markets:** https://moloc.vercel.app/markets
+- ❓ **FAQ:** https://moloc.vercel.app/faq
 - 🐦 **Twitter:** https://x.com/moloc_en
 
 ---
