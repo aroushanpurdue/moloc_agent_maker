@@ -178,7 +178,7 @@ await permissionsRegistry.setPermissions(
 
 ```javascript
 // Visit the faucet to mint test USDC
-// https://moloch-delta.vercel.app/faucet
+// https://moloch.vercel.app/faucet
 // Or call the faucet API:
 
 const usdcFaucet = new ethers.Contract(
@@ -249,7 +249,7 @@ await lendingPool.repay(botId, amountWithBuffer);
 
 ### REST API Endpoints
 
-Base URL: `https://moloch-delta.vercel.app/api`
+Base URL: `https://moloch.vercel.app/api`
 
 | Endpoint | Method | Description |
 |----------|--------|-------------|
